@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body */
+
+
+/* navbar fixed */
+.navbar-fixed{
+    @apply fixed z-[9999] bg-Dark-800 bg-opacity-80 ;
+    backdrop-filter: blur(10px);
+}
+.nav-menu{
+    @apply bg-opacity-80;
+    backdrop-filter: blur(10px);
+}
+/* navbar end */
+
+/* hamburger */
+.hamburger-line{
+    @apply w-[20px] h-[1px] my-[5px] block bg-sky-200 rounded-full lg:w-[30px] lg:h-[2px] lg:my-[8px] lg:mx-10;
+}
+.hamburger-lb{
+    @apply w-[10px] h-[1px] my-[5px] block bg-sky-200 rounded-full lg:w-[15px] lg:h-[2px] lg:my-[8px] lg:mx-10;
+}
+.hamburger-active > span:nth-child(1){
+    @apply rotate-45 w-[20px] lg:w-[30px];
+}
+.hamburger-active > span:nth-child(2){
+    @apply scale-0;
+}
+.hamburger-active > span:nth-child(3){
+    @apply -rotate-45 w-[20px] lg:w-[30px];
+}
+/* hamburger end */
