@@ -949,16 +949,20 @@ video {
   width: 100%;
 }
 
+.w-\[100px\] {
+  width: 100px;
+}
+
+.w-\[150px\] {
+  width: 150px;
+}
+
 .max-w-\[1200px\] {
   max-width: 1200px;
 }
 
 .max-w-\[250px\] {
   max-width: 250px;
-}
-
-.border-collapse {
-  border-collapse: collapse;
 }
 
 .origin-bottom-left {
@@ -1099,10 +1103,6 @@ video {
   border-style: none;
 }
 
-.border-\[\] {
-  border-color: ;
-}
-
 .border-sky-50 {
   --tw-border-opacity: 1;
   border-color: rgb(240 249 255 / var(--tw-border-opacity));
@@ -1160,16 +1160,6 @@ video {
 
 .bg-transparent {
   background-color: transparent;
-}
-
-.bg-Dark-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(16 43 78 / var(--tw-bg-opacity));
-}
-
-.bg-Primary-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(251 208 105 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-20 {
@@ -1721,11 +1711,6 @@ video {
   color: rgb(204 204 204 / var(--tw-text-opacity));
 }
 
-.text-white-100 {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -2033,24 +2018,14 @@ video {
   background-color: rgb(13 34 62 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-sky-100:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(224 242 254 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-Dark-400:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(64 85 113 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-Primary-400:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 192 55 / var(--tw-bg-opacity));
-}
-
 .hover\:bg-Dark-800:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(6 17 31 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-sky-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(224 242 254 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-opacity-50:hover {
@@ -2248,10 +2223,6 @@ video {
     border-radius: 0px;
   }
 
-  .lg\:rounded-full {
-    border-radius: 9999px;
-  }
-
   .lg\:rounded-bl-lg {
     border-bottom-left-radius: 0.5rem;
   }
@@ -2318,11 +2289,6 @@ video {
     --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
     --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
     box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  }
-
-  .lg\:hover\:bg-Dark-800:hover {
-    --tw-bg-opacity: 1;
-    background-color: rgb(6 17 31 / var(--tw-bg-opacity));
   }
 
   .lg\:hover\:text-\[\#010101\]:hover {
