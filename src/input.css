@@ -33,3 +33,8 @@
     @apply -rotate-45 w-[20px] lg:w-[30px];
 }
 /* hamburger end */
+
+.scrollable-container{
+    overlflow-x:scroll;
+    white-space:nowrap;
+}
