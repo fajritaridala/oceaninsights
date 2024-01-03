@@ -4,43 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <title>OCEANINSIGHTS - Bioma Laut</title>
 </head>
 <body class="scroll-smooth bg-sky-100">
     <!-- header start -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex z-10 transition duration-100">
-      <div class="container py-3 lg:py-5">
-          <div class="flex items-center justify-beetwen relative">
-              <div class="px-3 lg:mx-10">
-                  <a href="index.html" class="flex">
-                      <img class="my-auto h-5 lg:h-10" src="img/navbar/logo2.png" alt="">
-                      <h1 class="text-[12px] font-semibold text-aqua-300 my-auto lg:text-lg">OCEAN<span class="text-Primary-300">INSIGHTS</span></h1>
-                  </a>
-              </div>
-              <div class="flex items-center">
-                  <button id="hamburger" name="hamburger" type="button" class="block absolute right-4">
-                      <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
-                      <span class="hamburger-line transition duration-300 ease-in-out"></span>
-                      <span class="hamburger-lb transition duration-300 ease-in-out origin-bottom-left"></span>
-                  </button>
-                  <nav id="nav-menu" class="hidden absolute rounded-md py-5 px-5 right-4 bg-Dark-700 shadow-md  max-w-[250px] w-full top-[32px] lg:top-[60px] lg:right-0 lg:rounded-none nav-menu lg:rounded-bl-lg">
-                      <ul>
-                          <li class="mb-2 flex gap-3 group transition-all duration-500 py-2 px-3 rounded-full hover:bg-Dark-600">
-                              <svg class="w-5 h-5 text-sky-50 hidden group-hover:block dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                  <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
-                              </svg>
-                              <svg class="w-5 h-5 group-hover:hidden text-sky-50 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8v10a1 1 0 0 0 1 1h4v-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5h4a1 1 0 0 0 1-1V8M1 10l9-9 9 9"/>
-                              </svg>
-                              <a href="#" class="text-sky-50 font-semibold">Home</a>
-                          </li>
-                      </ul>
-                  </nav>
-              </div>
-          </div>
-      </div>
-  </header>
+    <?php include('../inc/inx-header-detail.php')?>
     <!-- header end -->
 
     <!-- isi start -->
@@ -266,70 +235,8 @@
     <!-- video end -->
 
     <!-- footer -->
-    <footer class="relative bg-blueGray-200 pt-8 pb-6 bg-Dark-800">
-        <div class="container mx-auto px-4 w-[95vw]">
-        <div class="flex flex-wrap text-left lg:text-left">
-            <div class="w-full lg:w-6/12 px-4">
-              <h4 class="text-3xl fonat-semibold text-white-500 font-bold uppercase">oceaninsights</h4>
-              <h5 class="text-lg mt-0 mb-2 text-white-600">
-                Jelajahi keindahan dan tantangan ekosistem laut bersama kami.
-              </h5>
-              <div class="mt-6 lg:mb-0 mb-6">
-                <button class="bg-Dark-100 text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-                  <i class="fab fa-twitter"></i></button><button class="bg-Dark-100 text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-                  <i class="fab fa-facebook-square"></i></button><button class="bg-Dark-100 text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-                  <i class="fab fa-dribbble"></i></button><button class="bg-Dark-100 text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-                  <i class="fab fa-github"></i>
-                </button>
-              </div>
-            </div>
-            <div class="w-full lg:w-6/12 px-4">
-              <div class="flex flex-wrap items-top mb-6">
-                <div class="w-full lg:w-4/12 px-4 ml-auto">
-                  <span class="block uppercase text-white-500 text-sm font-semibold mb-2">Kategori</span>
-                  <ul class="list-unstyled">
-                    <li>
-                      <a class="text-white-600 hover:text-white-800  block pb-2 text-sm" href="#">Beranda</a>
-                    </li>
-                    <li>
-                      <a class="text-white-600 hover:text-white-800  block pb-2 text-sm" href="#topik">Topik</a>
-                    </li>
-                    <li>
-                      <a class="text-white-600 hover:text-white-800  block pb-2 text-sm" href="#pesona">Pesona Laut</a>
-                    </li>
-                    <li>
-                      <a class="text-white-600 hover:text-white-800  block pb-2 text-sm" href="#artikel">Artikel</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="w-full lg:w-4/12 px-4">
-                  <span class="block uppercase text-white-500 text-sm font-semibold mb-2">Other Resources</span>
-                  <ul class="list-unstyled">
-                    <li>
-                      <a class="text-white-600 hover:text-blueGray-800  block pb-2 text-sm" href="https://creative-tim.com/terms?ref=njs-profile">Terms &amp; Conditions</a>
-                    </li>
-                    <li>
-                      <a class="text-white-600 hover:text-blueGray-800  block pb-2 text-sm" href="https://creative-tim.com/privacy?ref=njs-profile">Privacy Policy</a>
-                    </li>
-                    <li>
-                      <a class="text-white-600 hover:text-blueGray-800  block pb-2 text-sm" href="https://creative-tim.com/contact-us?ref=njs-profile">Contact Us</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr class="my-6 border-blueGray-300">
-          <div class="flex flex-wrap items-center md:justify-between justify-center">
-            <div class="w-full md:w-4/12 px-4 mx-auto text-center">
-              <div class="text-sm text-white-500 py-1">
-                Copyright © <span id="get-current-year">2023</span><a href="https://www.creative-tim.com/product/notus-js" class="text-white-500 hover:text-gray-800" target="_blank"> OCEANINSIGHTS.
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
+    <?php include('../inc/inc-footer.php')?>
     <!-- footer end -->
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

@@ -7,7 +7,7 @@
 
 /* navbar fixed */
 .navbar-fixed{
-    @apply fixed z-[9999] bg-Dark-800 bg-opacity-80 ;
+    @apply fixed z-[9999] bg-Dark-800 bg-opacity-80 transition duration-500;
     backdrop-filter: blur(10px);
 }
 .nav-menu{

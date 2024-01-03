@@ -4,69 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>OCEANINSIGHTS - Beranda</title>
 </head>
 
 <body class="font-utama bg-sky-50 scroll-smooth">
     <!-- header start -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex z-10 transition duration-100">
-        <div class="container py-3 lg:py-5">
-            <div class="flex items-center justify-beetwen relative">
-                <div class="px-3 lg:mx-10">
-                    <a href="#home" class="flex">
-                        <img class="my-auto h-5 lg:h-10" src="img/navbar/logo2.png" alt="">
-                        <h1 class="text-[12px] font-semibold text-aqua-300 my-auto lg:text-lg">OCEAN<span class="text-Primary-300">INSIGHTS</span></h1>
-                    </a>
-                </div>
-                <div class="flex items-center">
-                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4">
-                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
-                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
-                        <span class="hamburger-lb transition duration-300 ease-in-out origin-bottom-left"></span>
-                    </button>
-                    <nav id="nav-menu" class="hidden absolute rounded-md py-5 px-5 right-4 bg-Dark-700 shadow-md  max-w-[250px] w-full top-[32px] lg:top-[60px] lg:right-0 lg:rounded-none nav-menu lg:rounded-bl-lg">
-                        <ul>
-                            <li class="mb-2 flex gap-4 group transition-all duration-500 py-2 px-3 rounded-full hover:bg-Dark-600">
-                                <svg class="w-5 h-5 text-sky-50 hidden group-hover:block dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
-                                </svg>
-                                <svg class="w-5 h-5 group-hover:hidden text-sky-50 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8v10a1 1 0 0 0 1 1h4v-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5h4a1 1 0 0 0 1-1V8M1 10l9-9 9 9"/>
-                                </svg>
-                                <a href="#home" class="text-sky-50 font-semibold">Home</a>
-                            </li>
-                            <li class="mb-2 flex gap-4 group py-2 px-3 rounded-full hover:bg-Dark-600">
-                                <svg class="w-5 h-5 text-sky-50 hidden group-hover:block dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
-                                    <path d="M9 1.334C7.06.594 1.646-.84.293.653a1.158 1.158 0 0 0-.293.77v13.973c0 .193.046.383.134.55.088.167.214.306.366.403a.932.932 0 0 0 .5.147c.176 0 .348-.05.5-.147 1.059-.32 6.265.851 7.5 1.65V1.334ZM19.707.653C18.353-.84 12.94.593 11 1.333V18c1.234-.799 6.436-1.968 7.5-1.65a.931.931 0 0 0 .5.147.931.931 0 0 0 .5-.148c.152-.096.279-.235.366-.403.088-.167.134-.357.134-.55V1.423a1.158 1.158 0 0 0-.293-.77Z"/>
-                                  </svg>
-                                <svg class="w-5 h-5 text-sky-50 group-hover:hidden dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 18">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 16.5c0-1-8-2.7-9-2V1.8c1-1 9 .707 9 1.706M10 16.5V3.506M10 16.5c0-1 8-2.7 9-2V1.8c-1-1-9 .707-9 1.706"/>
-                                  </svg>
-                                <a href="#topik" class="text-sky-50 font-semibold">Topic</a>
-                            </li>
-                            <li class="mb-2 py-2 px-3 flex gap-3 group rounded-full hover:bg-Dark-600">
-                                <img class="h-6 w-6 group-hover:hidden" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB70lEQVR4nN2VX2oUQRDG18CKgZBrCIJ3EPKUPISsyF7BoCGBiAeQhRC8hjHgIXzxzwE0ojEmeUgkIMhW76441RvwJzX0LL2dmdnRxzQ0zEx3fd9XX1fXtFrXegA3nacryr54Dp3yy6Y9i/LS1mzPf4GLct95TpyHuimeY1E6/6J6znmeRwDf+srWQLkN3DqD+QmB8iEi27XYmQQFuCiXBhwIX5eoPwNuuDEPnfK7IGlii4GPJWMpIk3Bvw+UlUlcxj1RshC7VnegueeiPE2ywmZt5mPWC0uBdpk13UhhN2T0PlZeR5BbqXwMAh+U2bM/OVjl0jZN2aK8qSPIRWZshPi9qwSer2HxVUHSRHk8hsqdYNPhVXZlZIs/YVE8z5paE49JCSujVjqcMrTFH7Bg7+LpzbpkTnlbQTCstMjSjL71ZpE0tij0FuygEuJeUNWfyriEQJTtcH4vqstUOUivvCsBS/rRRV9ZdZ7TyjK1i2aNKw8a8ygBO099F+XdFEmoOvEclV60ENQJm7O4VQyUZes9VVUVkfyxTErBo827BYnLeBzblRKYUlGeRFbt1IKHoLmCJFjyaaBs9j13i295tWRsiOdzodzAG7XryK41a1wNfjhHM22pyaZtFWG9RTxf8tuujEy5laKtVR7otRl/ASrHpPzjq9pyAAAAAElFTkSuQmCC">
-                                <img class="h-6 w-6 hidden group-hover:block" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABpUlEQVR4nN2Uz04UQRDGFyMkJsKDaHwHE70ZCSRkXwGjxCtXuJh9D/+8j6CwAkbjzQDbtS4wVXvYn6mhh0x2Zmd690glfZip7u+r/urr6nTudQAPh8qroHwR5UAUEeUqGP2gfBajC6wsBC4ZL8X4JQZNKxhnQdmcD9zoBWXSBi7K19J3D3jQCh6M/VZgu13AkozZFuWmIGkEHyivU8HF4K6ojOdByXLJlI1acGBZjN8pgHUhY97Enpw6VnWD0U2tuC5c/9xpt7fYqmyItluYwEMydiLBp850iPEzJitEncT4pzyJMvWrBMq1Jy9gTZTdRQj+wKNo31EdwciTf+Fx/N6dV7JzWI0EwwpBMH540q9Z+rc3D8Gl8XSmRHfaZ+xMEe+lEgyV97GPH2fbVDmcfvKSQOBngvF9pk19Kvrgyg+PeZtCIOVVWNQ4qX1oUabNWEEWMl7MQ5CfUSYDZb0WvATWKw5IxruyXK0kxodG8ELLgiT25Js3b2A8a6h+4uBJ47ok14YProSqT1plabjNsjvCZ0swjvPHqIyCceRW9NzMht6b+A+17OG/ltGIygAAAABJRU5ErkJggg==">
-                                <a href="#eksplorasi" class="text-sky-50 font-semibold">Exploration</a>
-                            </li>
-                            <li class="mb-2 py-2 gap-3 px-4 flex group rounded-full hover:bg-Dark-600">
-                                <svg class="w-5 h-5 group-hover:block hidden text-sky-50 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M19 4h-1a1 1 0 1 0 0 2v11a1 1 0 0 1-2 0V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v15a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a1 1 0 0 0-1-1ZM3 4a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4Zm9 13H4a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-3H4a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-3H4a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-3h-2a1 1 0 0 1 0-2h2a1 1 0 1 1 0 2Zm0-3h-2a1 1 0 0 1 0-2h2a1 1 0 1 1 0 2Z"/>
-                                    <path d="M6 5H5v1h1V5Z"/>
-                                  </svg>
-                                <svg class="w-5 h-5 group-hover:hidden text-sky-50 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 5h1v12a2 2 0 0 1-2 2m0 0a2 2 0 0 1-2-2V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v15a2 2 0 0 0 2 2h14ZM10 4h2m-2 3h2m-8 3h8m-8 3h8m-8 3h8M4 4h3v3H4V4Z"/>
-                                  </svg>
-                                <a href="#artikel" class="text-sky-50 font-semibold">Article</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </header>
+    <?php include('../inc/inc-header.php')?>
     <!-- header end -->
 
     <!-- hero start -->
@@ -147,7 +92,7 @@
                     <p>Ekosistem laut merupakan kompleksitas kehidupan di dalam air, melibatkan interaksi...</p>
                 </div>
                 <div class="p-6 pt-0">
-                    <a href="ekosistem.html">
+                    <a href="ekosistem.php">
                         <button class="overflow-hidden relative w-32 m-auto h-10 bg-sky-100 shadow-sm shadow-Dark-200  border-none rounded-md text-xl font-bold cursor-pointer z-10 group ">
                                 <span class="text-base text-md text-Dark-800">Read more</span>
                             <span class="absolute w-36 h-32 -top-8 -left-2 bg-white rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-left"></span>
@@ -168,7 +113,7 @@
                     <p>Zona laut adalah wilayah kaya biodiversitas yang dibagi menjadi beberapa...</p>
                 </div>
                 <div class="p-6 pt-0">
-                    <a href="zona.html">
+                    <a href="../php/zona.php">
                         <button class="overflow-hidden relative w-32 m-auto h-10 bg-sky-100 shadow-sm shadow-Dark-200  border-none rounded-md text-xl font-bold cursor-pointer z-10 group ">
                                 <span class="text-base text-md text-Dark-800">Read more</span>
                             <span class="absolute w-36 h-32 -top-8 -left-2 bg-white rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-left"></span>
@@ -189,7 +134,7 @@
                     <p>Bioma laut adalah ekosistem besar yang mencakup perairan laut di seluruh dunia...</p>
                 </div>
                 <div class="p-6 pt-0">
-                    <a href="biota.html">
+                    <a href="../php/bioma.php">
                         <button class="overflow-hidden relative w-32 m-auto h-10 bg-sky-100 shadow-sm shadow-Dark-200  border-none rounded-md text-xl font-bold cursor-pointer z-10 group ">
                                 <span class="text-base text-md text-Dark-800">Read more</span>
                             <span class="absolute w-36 h-32 -top-8 -left-2 bg-white rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-left"></span>
@@ -210,7 +155,7 @@
                     <p>Pencemaran laut adalah masalah serius yang terjadi ketika zat-zat berbahaya, limbah, atau polutan lainnya...</p>
                 </div>
                 <div class="p-6 pt-0">
-                    <a href="polusi.html">
+                    <a href="../php/polusi.php">
                         <button class="overflow-hidden relative w-32 m-auto h-10 bg-sky-100 shadow-sm shadow-Dark-200  border-none rounded-md text-xl font-bold cursor-pointer z-10 group ">
                                 <span class="text-base text-md text-Dark-800">Read more</span>
                             <span class="absolute w-36 h-32 -top-8 -left-2 bg-white rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-left"></span>
@@ -386,70 +331,8 @@
     <!-- artikel end -->
 
     <!-- footer start -->
-    <footer class="relative bg-blueGray-200 pt-8 pb-6 bg-Dark-800">
-        <div class="container mx-auto px-6 w-[95vw]">
-        <div class="flex flex-wrap text-left lg:text-left">
-            <div class="w-full lg:w-6/12 px-4">
-              <h4 class="text-3xl fonat-semibold text-white-500 font-bold uppercase">oceaninsights</h4>
-              <h5 class="text-lg mt-0 mb-2 text-white-600">
-                Discover the unexpected beauty in every corner of the vast marine ecosystem.
-              </h5>
-              <div class="mt-6 lg:mb-0 mb-6">
-                <button class="bg-Dark-100 hover:bg-Dark-200 text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-                  <i class="fab fa-twitter"></i></button><button class="bg-Dark-100 hover:bg-Dark-200 text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-                  <i class="fab fa-facebook-square"></i></button><button class="bg-Dark-100 hover:bg-Dark-200 text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-                  <i class="fab fa-dribbble"></i></button><button class="bg-Dark-100 hover:bg-Dark-200 text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
-                  <i class="fab fa-github"></i>
-                </button>
-              </div>
-            </div>
-            <div class="w-full lg:w-6/12 px-4">
-              <div class="flex flex-wrap items-top mb-6">
-                <div class="w-full lg:w-4/12 px-4 ml-auto">
-                  <span class="block uppercase text-white-500 text-sm font-semibold mb-2">Categories</span>
-                  <ul class="list-unstyled">
-                    <li>
-                      <a class="text-white-600 hover:text-white-800  block pb-2 text-sm" href="#">Home</a>
-                    </li>
-                    <li>
-                      <a class="text-white-600 hover:text-white-800  block pb-2 text-sm" href="#topik">Topic</a>
-                    </li>
-                    <li>
-                      <a class="text-white-600 hover:text-white-800  block pb-2 text-sm" href="#ekplorasi">Exploration</a>
-                    </li>
-                    <li>
-                      <a class="text-white-600 hover:text-white-800  block pb-2 text-sm" href="#artikel">Article</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="w-full lg:w-4/12 px-4">
-                    <span class="block uppercase text-white-500 text-sm font-semibold mb-2">Other Resources</span>
-                    <ul class="list-unstyled">
-                    <li>
-                        <a class="text-white-600 hover:text-blueGray-800  block pb-2 text-sm" href="https://creative-tim.com/terms?ref=njs-profile">Terms &amp; Conditions</a>
-                    </li>
-                    <li>
-                        <a class="text-white-600 hover:text-blueGray-800  block pb-2 text-sm" href="https://creative-tim.com/privacy?ref=njs-profile">Privacy Policy</a>
-                    </li>
-                    <li>
-                        <a class="text-white-600 hover:text-blueGray-800  block pb-2 text-sm" href="https://creative-tim.com/contact-us?ref=njs-profile">Contact Us</a>
-                    </li>
-                    </ul>
-                </div>
-                </div>
-            </div>
-            </div>
-            <hr class="my-6 border-blueGray-300">
-            <div class="flex flex-wrap items-center md:justify-between justify-center">
-            <div class="w-full md:w-4/12 px-4 mx-auto text-center">
-                <div class="text-sm text-white-500 py-1">
-                Copyright © <span id="get-current-year">2023</span><a href="https://www.creative-tim.com/product/notus-js" class="text-white-500 hover:text-gray-800" target="_blank"> OCEANINSIGHTS.
-                </div>
-            </div>
-            </div>
-        </div>
-    </footer>
+    <?php include('../inc/inc-footer.php')?>
     <!-- footer end -->
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
