@@ -1,65 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./public/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>OCEANINSIGHTS - Beranda</title>
 </head>
 
-<body class="font-utama bg-sky-50 scroll-smooth">
+<body class="font-utama bg-sky-50">
     <!-- header start -->
-    <header class="bg-transparent absolute top-0 left-0 w-full flex z-10 transition duration-100">
-        <div class="container py-3 lg:py-5">
-            <div class="flex items-center justify-beetwen relative">
-                <div class="px-3 lg:mx-10">
+    <header class="absolute top-0 left-0 w-full flex z-10 transition duration-100 lg:bg-Dark-600 lg:bg-opacity-85">
+        <div class="w-full lg:mx-0 lg:py-5">
+            <div class="flex items-center justify-beetwen relative invisible lg:visible">
+                <div class="pl-[2%]">
                     <a href="#home" class="flex">
-                        <img class="my-auto h-5 lg:h-10" src="img/navbar/logo2.png" alt="">
+                        <img class="my-auto h-5 lg:h-10" src="public/img/navbar/logo2.png" alt="">
                         <h1 class="text-[12px] font-semibold text-aqua-300 my-auto lg:text-lg">OCEAN<span class="text-Primary-300">INSIGHTS</span></h1>
                     </a>
                 </div>
-                <div class="flex items-center">
-                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4">
-                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
-                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
-                        <span class="hamburger-lb transition duration-300 ease-in-out origin-bottom-left"></span>
-                    </button>
-                    <nav id="nav-menu" class="hidden absolute rounded-md py-5 px-5 right-4 bg-Dark-700 shadow-md  max-w-[250px] w-full top-[32px] lg:top-[60px] lg:right-0 lg:rounded-none nav-menu lg:rounded-bl-lg">
-                        <ul>
-                            <li class="mb-2 flex gap-4 group transition-all duration-500 py-2 px-3 rounded-full hover:bg-Dark-600">
-                                <svg class="w-5 h-5 text-sky-50 hidden group-hover:block dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
-                                </svg>
-                                <svg class="w-5 h-5 group-hover:hidden text-sky-50 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8v10a1 1 0 0 0 1 1h4v-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5h4a1 1 0 0 0 1-1V8M1 10l9-9 9 9"/>
-                                </svg>
-                                <a href="#home" class="text-sky-50 font-semibold">Home</a>
+                <div class="flex items-center visible lg:absolute lg:right-[2%] lg:w-[25rem]">
+                    <nav id="nav-menu" class="absolute lg:static right-0 bg-Dark-700 w-full top-[92vh] lg:bg-transparent">
+                        <ul class="flex justify-around">
+                            <li class="flex py-4 group transition-all duration-500 lg:hover:bg-Dark-800 lg:px-[1rem] lg:rounded-lg">
+                                <a href="#home">
+                                    <svg class="w-5 h-5 text-sky-50 hidden group-hover:block dark:text-white lg:group-hover:hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="m19.707 9.293-2-2-7-7a1 1 0 0 0-1.414 0l-7 7-2 2a1 1 0 0 0 1.414 1.414L2 10.414V18a2 2 0 0 0 2 2h3a1 1 0 0 0 1-1v-4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v4a1 1 0 0 0 1 1h3a2 2 0 0 0 2-2v-7.586l.293.293a1 1 0 0 0 1.414-1.414Z"/>
+                                    </svg>
+                                    <svg class="w-5 h-5 group-hover:hidden text-sky-50 dark:text-white lg:hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8v10a1 1 0 0 0 1 1h4v-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v5h4a1 1 0 0 0 1-1V8M1 10l9-9 9 9"/>
+                                    </svg>
+                                    <a href="#home" class="text-sky-50 font-semibold hidden lg:inline">Home</a>
+                                </a>
                             </li>
-                            <li class="mb-2 flex gap-4 group py-2 px-3 rounded-full hover:bg-Dark-600">
-                                <svg class="w-5 h-5 text-sky-50 hidden group-hover:block dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
-                                    <path d="M9 1.334C7.06.594 1.646-.84.293.653a1.158 1.158 0 0 0-.293.77v13.973c0 .193.046.383.134.55.088.167.214.306.366.403a.932.932 0 0 0 .5.147c.176 0 .348-.05.5-.147 1.059-.32 6.265.851 7.5 1.65V1.334ZM19.707.653C18.353-.84 12.94.593 11 1.333V18c1.234-.799 6.436-1.968 7.5-1.65a.931.931 0 0 0 .5.147.931.931 0 0 0 .5-.148c.152-.096.279-.235.366-.403.088-.167.134-.357.134-.55V1.423a1.158 1.158 0 0 0-.293-.77Z"/>
-                                  </svg>
-                                <svg class="w-5 h-5 text-sky-50 group-hover:hidden dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 18">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 16.5c0-1-8-2.7-9-2V1.8c1-1 9 .707 9 1.706M10 16.5V3.506M10 16.5c0-1 8-2.7 9-2V1.8c-1-1-9 .707-9 1.706"/>
-                                  </svg>
-                                <a href="#topik" class="text-sky-50 font-semibold">Topic</a>
+                            <li class="flex py-4 group transition-all duration-500 lg:hover:bg-Dark-800 lg:px-[1rem] lg:rounded-lg">
+                                <a href="#topic">
+                                    <svg class="w-5 h-5 text-sky-50 hidden group-hover:block dark:text-white lg:group-hover:hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 18">
+                                        <path d="M9 1.334C7.06.594 1.646-.84.293.653a1.158 1.158 0 0 0-.293.77v13.973c0 .193.046.383.134.55.088.167.214.306.366.403a.932.932 0 0 0 .5.147c.176 0 .348-.05.5-.147 1.059-.32 6.265.851 7.5 1.65V1.334ZM19.707.653C18.353-.84 12.94.593 11 1.333V18c1.234-.799 6.436-1.968 7.5-1.65a.931.931 0 0 0 .5.147.931.931 0 0 0 .5-.148c.152-.096.279-.235.366-.403.088-.167.134-.357.134-.55V1.423a1.158 1.158 0 0 0-.293-.77Z"/>
+                                      </svg>
+                                    <svg class="w-5 h-5 text-sky-50 group-hover:hidden dark:text-white lg:hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 18">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 16.5c0-1-8-2.7-9-2V1.8c1-1 9 .707 9 1.706M10 16.5V3.506M10 16.5c0-1 8-2.7 9-2V1.8c-1-1-9 .707-9 1.706"/>
+                                      </svg>
+                                    <a href="#topik" class="text-sky-50 font-semibold hidden lg:inline">Topic</a>
+                                </a>
                             </li>
-                            <li class="mb-2 py-2 px-3 flex gap-3 group rounded-full hover:bg-Dark-600">
-                                <img class="h-6 w-6 group-hover:hidden" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB70lEQVR4nN2VX2oUQRDG18CKgZBrCIJ3EPKUPISsyF7BoCGBiAeQhRC8hjHgIXzxzwE0ojEmeUgkIMhW76441RvwJzX0LL2dmdnRxzQ0zEx3fd9XX1fXtFrXegA3nacryr54Dp3yy6Y9i/LS1mzPf4GLct95TpyHuimeY1E6/6J6znmeRwDf+srWQLkN3DqD+QmB8iEi27XYmQQFuCiXBhwIX5eoPwNuuDEPnfK7IGlii4GPJWMpIk3Bvw+UlUlcxj1RshC7VnegueeiPE2ywmZt5mPWC0uBdpk13UhhN2T0PlZeR5BbqXwMAh+U2bM/OVjl0jZN2aK8qSPIRWZshPi9qwSer2HxVUHSRHk8hsqdYNPhVXZlZIs/YVE8z5paE49JCSujVjqcMrTFH7Bg7+LpzbpkTnlbQTCstMjSjL71ZpE0tij0FuygEuJeUNWfyriEQJTtcH4vqstUOUivvCsBS/rRRV9ZdZ7TyjK1i2aNKw8a8ygBO099F+XdFEmoOvEclV60ENQJm7O4VQyUZes9VVUVkfyxTErBo827BYnLeBzblRKYUlGeRFbt1IKHoLmCJFjyaaBs9j13i295tWRsiOdzodzAG7XryK41a1wNfjhHM22pyaZtFWG9RTxf8tuujEy5laKtVR7otRl/ASrHpPzjq9pyAAAAAElFTkSuQmCC">
-                                <img class="h-6 w-6 hidden group-hover:block" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABpUlEQVR4nN2Uz04UQRDGFyMkJsKDaHwHE70ZCSRkXwGjxCtXuJh9D/+8j6CwAkbjzQDbtS4wVXvYn6mhh0x2Zmd690glfZip7u+r/urr6nTudQAPh8qroHwR5UAUEeUqGP2gfBajC6wsBC4ZL8X4JQZNKxhnQdmcD9zoBWXSBi7K19J3D3jQCh6M/VZgu13AkozZFuWmIGkEHyivU8HF4K6ojOdByXLJlI1acGBZjN8pgHUhY97Enpw6VnWD0U2tuC5c/9xpt7fYqmyItluYwEMydiLBp850iPEzJitEncT4pzyJMvWrBMq1Jy9gTZTdRQj+wKNo31EdwciTf+Fx/N6dV7JzWI0EwwpBMH540q9Z+rc3D8Gl8XSmRHfaZ+xMEe+lEgyV97GPH2fbVDmcfvKSQOBngvF9pk19Kvrgyg+PeZtCIOVVWNQ4qX1oUabNWEEWMl7MQ5CfUSYDZb0WvATWKw5IxruyXK0kxodG8ELLgiT25Js3b2A8a6h+4uBJ47ok14YProSqT1plabjNsjvCZ0swjvPHqIyCceRW9NzMht6b+A+17OG/ltGIygAAAABJRU5ErkJggg==">
-                                <a href="#eksplorasi" class="text-sky-50 font-semibold">Exploration</a>
+                            <li class="flex py-4 group transition-all duration-500 lg:hover:bg-Dark-800 lg:px-[1rem] lg:rounded-lg">
+                                <a href="#discover">
+                                    <img class="h-6 w-6 group-hover:hidden lg:hidden" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB70lEQVR4nN2VX2oUQRDG18CKgZBrCIJ3EPKUPISsyF7BoCGBiAeQhRC8hjHgIXzxzwE0ojEmeUgkIMhW76441RvwJzX0LL2dmdnRxzQ0zEx3fd9XX1fXtFrXegA3nacryr54Dp3yy6Y9i/LS1mzPf4GLct95TpyHuimeY1E6/6J6znmeRwDf+srWQLkN3DqD+QmB8iEi27XYmQQFuCiXBhwIX5eoPwNuuDEPnfK7IGlii4GPJWMpIk3Bvw+UlUlcxj1RshC7VnegueeiPE2ywmZt5mPWC0uBdpk13UhhN2T0PlZeR5BbqXwMAh+U2bM/OVjl0jZN2aK8qSPIRWZshPi9qwSer2HxVUHSRHk8hsqdYNPhVXZlZIs/YVE8z5paE49JCSujVjqcMrTFH7Bg7+LpzbpkTnlbQTCstMjSjL71ZpE0tij0FuygEuJeUNWfyriEQJTtcH4vqstUOUivvCsBS/rRRV9ZdZ7TyjK1i2aNKw8a8ygBO099F+XdFEmoOvEclV60ENQJm7O4VQyUZes9VVUVkfyxTErBo827BYnLeBzblRKYUlGeRFbt1IKHoLmCJFjyaaBs9j13i295tWRsiOdzodzAG7XryK41a1wNfjhHM22pyaZtFWG9RTxf8tuujEy5laKtVR7otRl/ASrHpPzjq9pyAAAAAElFTkSuQmCC">
+                                    <img class="h-6 w-6 hidden group-hover:block lg:group-hover:hidden " src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABpUlEQVR4nN2Uz04UQRDGFyMkJsKDaHwHE70ZCSRkXwGjxCtXuJh9D/+8j6CwAkbjzQDbtS4wVXvYn6mhh0x2Zmd690glfZip7u+r/urr6nTudQAPh8qroHwR5UAUEeUqGP2gfBajC6wsBC4ZL8X4JQZNKxhnQdmcD9zoBWXSBi7K19J3D3jQCh6M/VZgu13AkozZFuWmIGkEHyivU8HF4K6ojOdByXLJlI1acGBZjN8pgHUhY97Enpw6VnWD0U2tuC5c/9xpt7fYqmyItluYwEMydiLBp850iPEzJitEncT4pzyJMvWrBMq1Jy9gTZTdRQj+wKNo31EdwciTf+Fx/N6dV7JzWI0EwwpBMH540q9Z+rc3D8Gl8XSmRHfaZ+xMEe+lEgyV97GPH2fbVDmcfvKSQOBngvF9pk19Kvrgyg+PeZtCIOVVWNQ4qX1oUabNWEEWMl7MQ5CfUSYDZb0WvATWKw5IxruyXK0kxodG8ELLgiT25Js3b2A8a6h+4uBJ47ok14YProSqT1plabjNsjvCZ0swjvPHqIyCceRW9NzMht6b+A+17OG/ltGIygAAAABJRU5ErkJggg==">
+                                    <a href="#eksplorasi" class="text-sky-50 font-semibold hidden lg:inline">Exploration</a>
+                                </a>
                             </li>
-                            <li class="mb-2 py-2 gap-3 px-4 flex group rounded-full hover:bg-Dark-600">
-                                <svg class="w-5 h-5 group-hover:block hidden text-sky-50 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M19 4h-1a1 1 0 1 0 0 2v11a1 1 0 0 1-2 0V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v15a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a1 1 0 0 0-1-1ZM3 4a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4Zm9 13H4a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-3H4a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-3H4a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-3h-2a1 1 0 0 1 0-2h2a1 1 0 1 1 0 2Zm0-3h-2a1 1 0 0 1 0-2h2a1 1 0 1 1 0 2Z"/>
-                                    <path d="M6 5H5v1h1V5Z"/>
-                                  </svg>
-                                <svg class="w-5 h-5 group-hover:hidden text-sky-50 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
-                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 5h1v12a2 2 0 0 1-2 2m0 0a2 2 0 0 1-2-2V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v15a2 2 0 0 0 2 2h14ZM10 4h2m-2 3h2m-8 3h8m-8 3h8m-8 3h8M4 4h3v3H4V4Z"/>
-                                  </svg>
-                                <a href="#artikel" class="text-sky-50 font-semibold">Article</a>
+                            <li class="flex py-4 group transition-all duration-500 lg:hover:bg-Dark-800 lg:px-[1rem] lg:rounded-lg">
+                                <a href="#article">
+                                    <svg class="w-5 h-5 group-hover:block hidden text-sky-50 dark:text-white lg:group-hover:hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M19 4h-1a1 1 0 1 0 0 2v11a1 1 0 0 1-2 0V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v15a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a1 1 0 0 0-1-1ZM3 4a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4Zm9 13H4a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-3H4a1 1 0 0 1 0-2h8a1 1 0 0 1 0 2Zm0-3H4a1 1 0 0 1 0-2h8a1 1 0 1 1 0 2Zm0-3h-2a1 1 0 0 1 0-2h2a1 1 0 1 1 0 2Zm0-3h-2a1 1 0 0 1 0-2h2a1 1 0 1 1 0 2Z"/>
+                                        <path d="M6 5H5v1h1V5Z"/>
+                                      </svg>
+                                    <svg class="w-5 h-5 group-hover:hidden text-sky-50 dark:text-white lg:hidden" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 5h1v12a2 2 0 0 1-2 2m0 0a2 2 0 0 1-2-2V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v15a2 2 0 0 0 2 2h14ZM10 4h2m-2 3h2m-8 3h8m-8 3h8m-8 3h8M4 4h3v3H4V4Z"/>
+                                      </svg>
+                                    <a href="#artikel" class="text-sky-50 font-semibold hidden lg:inline">Article</a>
+                                </a>
                             </li>
                         </ul>
                     </nav>
@@ -71,14 +74,14 @@
 
     <!-- hero start -->
     <section id="home" class="pt-0">
-        <div class=" hidden w-full h-[50vh] bg-Dark-600 lg:block" autoplay ></div>
-        <div class="container ">
-            <div class="w-full h-[350px] bg-slate-300 bg-cover lg:h-[40vh] lg:w-[1200px] lg:mx-auto lg:z-10 lg:translate-x-1 lg:-mt-[21vh] lg:rounded-md lg:object-cover lg:shadow-2xl" style="background-image: url(img/hero/ubur2.jpg);">
-                <div class="flex bg-Dark-900 bg-opacity-20 h-full lg:rounded-md ">
-                    <div class="w-full my-[150px] text-center  lg:text-center lg:pt-10 lg:my-auto">
-                        <h1 class="text-4xl font-bold text-sky-300 mb-[10px] lg:text-6xl lg:mb-4">OCEAN<span class="text-Primary-400">INSIGHTS</span></h1>
-                        <p class="text-sm text-sky-200 mb-[20px] lg:text-lg lg:mb-[80px]">Come explore the fascinating charms of marine life. Discover the unexpected beauty <span class="block lg:block ">in every corner of the vast marine ecosystem.</span> </p>
-                        <a href="ekosistem.html" class="bg-Dark-600 py-3 px-5 font-semibold border-2 border-sky-50 text-sky-100 text-lg rounded-full w-[150px] hover:bg-Dark-800  lg:block mx-auto">Explore</a>
+        <div class="hidden w-full h-[50vh] bg-Dark-600 lg:block lg:h-[20rem] lg:relative 2xl:h-[30rem]" autoplay ></div>
+        <div class="mx-auto">
+            <div class="w-full h-[100vh] bg-slate-300 bg-cover lg:h-[22rem] lg:absolute lg:w-[75rem] lg:left-[2.5rem] lg:z-1 lg:top-[10rem] lg:rounded-[1rem] lg:object-cover lg:shadow-none 2xl:h-[32rem] 2xl:w-[110rem] 2xl:left-[5rem]" style="background-image: url(public/img/hero/ubur2.jpg);">
+                <div class="flex bg-Dark-900 bg-opacity-20 h-full lg:rounded-[1rem] ">
+                    <div class="w-[80%] mx-auto my-[150px] text-center lg:text-center lg:pt-10 lg:my-auto">
+                        <h1 class="text-[4rem] leading-[3.2rem] font-bold text-sky-300 mb-[2rem] lg:mb-4 2xl:text-[6rem] 2xl:mb-[2rem]">OCEAN<span class="text-Primary-400 block text-[3rem] lg:inline lg:text-[4rem] 2xl:text-[6rem]">INSIGHTS</span></h1>
+                        <p class="text-sky-200 text-sm font-semibold mb-[10rem] lg:text-lg lg:mb-[80px] w-[85%] mx-auto 2xl:text-[1.5rem]">Come explore the fascinating charms of marine life. Discover the unexpected beauty <span class="block lg:block ">in every corner of the vast marine ecosystem.</span> </p>
+                        <a href="public/ekosistem.html" class="bg-sky-300 py-[.5rem] px-[2.5rem] font-semibold border-2 border-Dark-300 text-Dark-800 hover:text-white-600 hover:border-white-600 transition duration-500 ease-in-out text-lg rounded-[1rem] w-[150px] hover:bg-Dark-800  lg:block mx-auto lg:absolute lg:-bottom-[1.5rem] lg:left-[33rem] lg:border-4 lg:border-sky-50 lg:hover:border-sky-50 lg:hover:text-sky-50 2xl:hidden">Explore</a>
                     </div>
                 </div>
             </div>
@@ -88,7 +91,7 @@
 
     <!-- misi start -->
     <section>
-        <div class="w-full h-[180px] bg-sky-100 lg:h-[200px] lg:shadow-md">
+        <div class="w-full h-[180px] bg-sky-50 lg:bg-gradient-to-b lg:from-sky-50 lg:via-sky-50 lg:to-sky-100  lg:h-[28rem] lg:pt-[12rem] lg:shadow-md">
             <div class="flex-col lg:flex-none">
                 <div class="text-center font-semibold text-Dark-400 pt-8 lg:mt-14 lg:my-5 lg:text-lg">Our Vision</div>
                 <h2 class="text-center font-base text-sm mt-4  text-Dark-500 lg:my-auto lg:text-lg">Reliable Information on Marine Ecosystem Exploration and Efforts to <span class="block text-[#010101] font-semibold text-base mx-12 lg:py-1 lg:px-2 bg-opacity-50 lg:mx-[400px] lg:text-Dark-600 lg:hover:text-[#010101] rounded-md lg:text-xl hover:bg-sky-100 hover:bg-opacity-50 ">Preservation of Marine Resources</span></h2>
@@ -99,46 +102,46 @@
 
     <!-- topik start -->
     <!-- mobile -->
-    <section class="container lg:hidden pt-8">
-        <h1 class="text-lg text-center font-semibold text-Dark-400 pb-8">Topic</h1>
-        <div class="grid grid-cols-2 ">
-            <a href="ekosistem.html">
-                <div class="mx-auto rounded-lg overflow-hidden bg-[url('img/topik/ekosistem.jpg')] bg-cover shadow-md shadow-Dark-700 w-[85%] h-20 flex">
+    <section id="topic" class="lg:hidden pt-8 bg-sky-100">
+        <h1 class="text-[2rem] text-center font-bold text-Dark-400 py-8">Topic</h1>
+        <div class="grid grid-cols-1">
+            <a href="public/ekosistem.html">
+                <div class="mx-auto rounded-lg overflow-hidden bg-[url('img/topik/ekosistem.jpg')] bg-cover shadow-md shadow-Dark-700 w-[85%] h-[10rem] flex">
                     <div class="w-full h-full bg-Dark-800 bg-opacity-60 flex">
                         <p class="m-auto text-base font-semibold text-sky-200">Ekosistem Laut</p>
                     </div>
                 </div>
             </a>
-            <a href="zona.html">
-                <div class="mx-auto rounded-lg overflow-hidden bg-[url('img/topik/zona.jpg')] bg-cover shadow-md shadow-Dark-700 bg-center w-[85%] h-20 flex">
+            <a href="public/zona.html">
+                <div class="mx-auto mt-[1rem] rounded-lg overflow-hidden bg-[url('img/topik/zona.jpg')] bg-cover shadow-md shadow-Dark-700 bg-center w-[85%] h-[10rem] flex">
                     <div class="w-full h-full bg-Dark-800 bg-opacity-60 flex">
                         <p class="m-auto text-base font-semibold text-sky-200">Zona Laut</p>
                     </div>
                 </div>
             </a>
-            <a href="biota.html">
-                <div class="mt-4 mx-auto rounded-lg overflow-hidden bg-[url('img/topik/biota.jpg')] bg-cover shadow-md shadow-Dark-700 w-[85%] h-20 flex">
+            <a href="public/biota.html">
+                <div class="mt-4 mx-auto rounded-lg overflow-hidden bg-[url('img/topik/biota.jpg')] bg-cover shadow-md shadow-Dark-700 w-[85%] h-[10rem] flex">
                     <div class="w-full h-full bg-Dark-800 bg-opacity-60 flex">
                         <p class="m-auto text-base font-semibold text-sky-200">Bioma Laut</p>
                     </div>
                 </div>
             </a>
-            <a href="polusi.html">
-                <div class="mt-4 mx-auto rounded-lg overflow-hidden bg-[url('img/topik/biota.jpg')] bg-cover shadow-md shadow-Dark-700 w-[85%] h-20 flex">
+            <a href="public/polusi.html">
+                <div class="mt-4 mx-auto rounded-lg overflow-hidden bg-[url('img/topik/polusi.jpg')] bg-cover shadow-md shadow-Dark-700 w-[85%] h-[10rem] flex">
                     <div class="w-full h-full bg-Dark-800 bg-opacity-60 flex">
                         <p class="m-auto text-base font-semibold text-sky-200">Pencemaran Laut</p>
                     </div>
                 </div>
             </a>
             <a href="#">
-                <div class="mt-4 mx-auto rounded-lg overflow-hidden bg-[url('img/topik/konservasi1.jpg')] bg-cover shadow-md shadow-Dark-700 w-[85%] h-20 flex">
+                <div class="mt-4 mx-auto rounded-lg overflow-hidden bg-[url('img/topik/konservasi1.jpg')] bg-cover shadow-md shadow-Dark-700 w-[85%] h-[10rem] flex">
                     <div class="w-full h-full bg-Dark-800 bg-opacity-60 flex">
                         <p class="m-auto text-base font-semibold text-sky-200">Konservasi Laut</p>
                     </div>
                 </div>
             </a>
             <a href="#">
-                <div class="mt-4 mx-auto rounded-lg overflow-hidden bg-[url('img/topik/sdgs.jpg')] bg-cover shadow-md shadow-Dark-700 w-[85%] h-20 flex">
+                <div class="mt-4 mx-auto rounded-lg overflow-hidden bg-[url('img/topik/sdgs.jpg')] bg-cover shadow-md shadow-Dark-700 w-[85%] h-[10rem] flex">
                     <div class="w-full h-full bg-Dark-800 bg-opacity-60 flex">
                         <p class="m-auto text-base font-semibold text-sky-200">SDGs</p>
                     </div>
@@ -148,10 +151,12 @@
     </section>
 
     <!-- dekstop -->
-    <section id="topik" class="container hidden lg:block">
-        <h1 class="text-2xl font-semibold pt-24 text-center pb-16 text-Dark-400">Topic</h1>
+    <section id="topik" class="mx-auto hidden bg-sky-100 pb-24 lg:block">
+        <h1 class="text-2xl uppercase text-shadow font-bold pt-24 text-center pb-16 text-Dark-400">Topic</h1>
         <div class="flex flex-wrap gap-10 justify-center">
-            <div class="relative cursor-pointer transition-all duration-500 hover:translate-y-2 flex w-80 flex-col rounded-xl bg-sky-100 bg-clip-border text-Dark-400 shadow-sm shadow-Dark-200">
+
+            <!-- ekosistem laut -->
+            <div class="relative cursor-pointer transition-all duration-500 hover:translate-y-2 flex w-80 flex-col rounded-xl bg-sky-50 bg-clip-border text-Dark-400 shadow-sm shadow-Dark-200">
                 <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-md bg-blue-gray-500 bg-clip-border text-white shadow-md shadow-Dark-200 bg-[url('img/topik/ekosistem.jpg')] bg-cover">
                 </div>
                 <div class="p-6">
@@ -172,7 +177,9 @@
                     </a>
                 </div>
             </div>
-            <div class="relative cursor-pointer transition-all duration-500 hover:translate-y-2 flex w-80 flex-col rounded-xl bg-sky-100 bg-clip-border text-Dark-400 shadow-sm shadow-Dark-200">
+
+            <!-- zona laut -->
+            <div class="relative cursor-pointer transition-all duration-500 hover:translate-y-2 flex w-80 flex-col rounded-xl bg-sky-50 bg-clip-border text-Dark-400 shadow-sm shadow-Dark-200">
                 <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-md bg-blue-gray-500 bg-clip-border text-white shadow-md shadow-Dark-200 bg-[url('img/topik/zona.jpg')] bg-cover">
                 </div>
                 <div class="p-6">
@@ -193,7 +200,9 @@
                     </a>
                 </div>
             </div>
-            <div class="relative cursor-pointer transition-all duration-500 hover:translate-y-2 flex w-80 flex-col rounded-xl bg-sky-100 bg-clip-border text-Dark-400 shadow-sm shadow-Dark-200">
+
+            <!-- bioma laut -->
+            <div class="relative cursor-pointer transition-all duration-500 hover:translate-y-2 flex w-80 flex-col rounded-xl bg-sky-50 bg-clip-border text-Dark-400 shadow-sm shadow-Dark-200">
                 <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-md bg-blue-gray-500 bg-clip-border text-white shadow-md shadow-Dark-200 bg-[url('img/topik/biota.jpg')] bg-cover bg-center">
                 </div>
                 <div class="p-6">
@@ -214,7 +223,9 @@
                     </a>
                 </div>
             </div>
-            <div class="my-10 cursor-pointer transition duration-500 hover:translate-y-2 relative flex w-80 flex-col rounded-xl bg-sky-100 bg-clip-border text-Dark-400 shadow-sm shadow-Dark-200">
+
+            <!-- pencemaran laut -->
+            <div class="cursor-pointer transition duration-500 hover:translate-y-2 relative flex w-80 flex-col rounded-xl bg-sky-50 bg-clip-border text-Dark-400 shadow-sm shadow-Dark-200">
                 <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-md bg-blue-gray-500 bg-clip-border text-white shadow-md shadow-Dark-200 bg-[url('img/topik/polusi.jpg')] bg-cover bg-center">
                 </div>
                 <div class="p-6">
@@ -235,7 +246,9 @@
                     </a>
                 </div>
             </div>
-            <div class="my-10 cursor-pointer transition duration-500 hover:translate-y-2 relative flex w-80 flex-col rounded-xl bg-sky-100 bg-clip-border text-Dark-400 shadow-sm shadow-Dark-200">
+
+            <!-- konservasi laut -->
+            <div class="cursor-pointer transition duration-500 hover:translate-y-2 relative flex w-80 flex-col rounded-xl bg-sky-50 bg-clip-border text-Dark-400 shadow-sm shadow-Dark-200">
                 <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-md bg-blue-gray-500 bg-clip-border text-white shadow-md shadow-Dark-200 bg-[url('img/topik/konservasi1.jpg')] bg-cover bg-center">
                 </div>
                 <div class="p-6">
@@ -256,7 +269,9 @@
                     </a>
                 </div>
             </div>
-            <div class="my-10 cursor-pointer transition duration-500 hover:translate-y-2 relative flex w-80 flex-col rounded-xl bg-sky-100 bg-clip-border text-Dark-400 shadow-sm shadow-Dark-200">
+
+            <!-- SDGs -->
+            <div class="cursor-pointer transition duration-500 hover:translate-y-2 relative flex w-80 flex-col rounded-xl bg-sky-50 bg-clip-border text-Dark-400 shadow-sm shadow-Dark-200">
                 <div class="relative mx-4 -mt-6 h-40 overflow-hidden rounded-md bg-blue-gray-500 bg-clip-border text-white shadow-md shadow-Dark-200 bg-[url('img/topik/sdgs.jpg')] bg-cover bg-center">
                 </div>
                 <div class="p-6">
@@ -283,10 +298,10 @@
     
     <!-- discover start -->
     <!-- mobile -->
-    <section class="lg:hidden pt-12">
+    <section id="discover" class="lg:hidden mt-12">
         <div class="container">
-            <div class="flex flex-wrap px-3 pb-12 gap-[10px] bg-Dark-600">
-                <h1 class="text-lg font-semibold mx-auto uppercase text-center text-Primary-400 py-6">jelajahi pesona <span class="block text-sky-50">laut Indonesia</span></h1>
+            <div class="flex flex-wrap px-3 pb-12 gap-[2rem] bg-Dark-600">
+                <h1 class="text-[1.5rem] leading-[1.7rem] font-bold mx-auto uppercase text-center text-Primary-400 py-[3rem]">Discover the Sea <span class="block text-sky-50">in a New Way</span></h1>
                 <div class="w-full aspect-video bg-black">
                     <iframe class="w-full h-full" src="https://www.youtube.com/embed/XW5Op06q2yA?si=Ko_9svBKED1xrs9H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
@@ -301,8 +316,8 @@
     </section>
 
     <!-- dekstop -->
-    <section id="eksplorasi" class="hidden lg:block pt-24">
-        <div class="container bg-Dark-600 pt-14">
+    <section id="eksplorasi" class="hidden lg:block">
+        <div class=" mx-auto w-[100vw] bg-Dark-600 pt-14">
             <div class="grid grid-rows">
                 <div class="mx-auto">
                     <div class="w-[1010px] h-[200px] ">
@@ -332,9 +347,9 @@
 
     <!-- artikel start -->
     <!-- mobile -->
-    <section class="lg:hidden">
+    <section id="article" class="lg:hidden">
         <div class="container">
-            <h1 class="text-base font-semibold text-center py-8">Artikel Terkait</h1>
+            <h1 class="text-[2rem] font-bold text-center py-[2.5rem]">Artikel Terkait</h1>
             <div class="flex flex-wrap">
                 <div class="bg-sky-50 rounded-lg overflow-hidden mx-auto w-[350px] aspect-square flex flex-wrap shadow-md mb-10">
                     <div class="w-full h-[50%] bg-center bg-[url('img/hero/8.jpg')]"></div>
@@ -356,7 +371,7 @@
 
     <!-- dekstop -->
     <section id="artikel">
-        <div class="container py-24 hidden lg:block ">
+        <div class="conainer mx-auto py-24 hidden lg:block ">
             <div class="flex flex-col justify-center">
                 <h1 class=" text-2xl font-semibold mx-auto pb-8 text-Dark-400">Article</h1>
                 <div class="grid grid-cols-3 max-w-[1200px] mx-auto gap-6 ">
@@ -401,7 +416,7 @@
 
     <!-- footer start -->
     <footer class="relative bg-blueGray-200 pt-8 pb-6 bg-Dark-800">
-        <div class="container mx-auto px-6 lg:w-[95vw]">
+        <div class=" mx-auto px-6 lg:w-[95vw]">
         <div class="flex flex-wrap text-left lg:text-left">
             <div class="w-full lg:w-6/12 px-4">
               <h4 class="text-3xl fonat-semibold text-white-500 font-bold uppercase">oceaninsights</h4>
@@ -464,6 +479,6 @@
         </div>
     </footer>
     <!-- footer end -->
-    <script src="js/script.js"></script>
+    <script src="/public/js/script.js"></script>
 </body>
 </html>
